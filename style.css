@@ -1,0 +1,138 @@
+
+.containerMain{
+    display: grid;
+    height:100vh;
+    grid-template-columns: .5fr 500px .5fr;
+    grid-template-rows: .5fr 510px .2fr;
+    grid-template-areas:
+    
+    "leftMargin main rightMargin"
+    "leftMargin calcu rightMargin"
+    "footer footer footer";
+    }
+
+main
+{ grid-area: main;
+    font-size: 50px;
+    color: red;
+    font-weight: bolder;
+    margin-left: 10px;
+    text-align: center;
+    justify-content: center;
+     margin-top: 30px;
+ margin-bottom: 0px;
+
+}
+
+#leftMargin
+{
+grid-area: leftMargin;
+}
+
+#rightMargin
+{
+grid-area: rightMargin;
+}
+footer
+{   
+    grid-area: footer;
+}
+
+#calcu2
+{grid-area: calcu;}
+
+.calcu
+{
+border-style: solid;
+border-color: darkgrey;
+border-width: 5px;
+background-color: rgb(0, 0, 73);
+display: grid;
+height: 444px;
+width: 358px;
+grid-template-columns: 90px 90px  90px  90px;
+grid-template-rows: 74px 74px 74px 74px 74px 74px;
+grid-template-areas: 
+"outputArea outputArea outputArea outputArea"
+"calcButton calcButton calcButton calcButton"
+"calcButton calcButton calcButton calcButton"
+"calcButton calcButton calcButton calcButton"
+"calcButton calcButton calcButton calcButton"
+"calcButton calcButton calcButton calcButton"
+;
+}
+
+#BKSP
+{grid-area: BKSP;}
+
+.num{
+    font-size: 50px;
+}
+
+#outputArea{grid-area: outputArea;
+    height: 70px;
+width: 354px;
+background-color: cornsilk;
+margin: 2px;
+font-size: 50px;
+}
+
+#calcButton
+{   margin: 2px;
+    height: 70px;
+width: 83.75px;
+border-radius: 5px;
+background-color: #217C7E;
+font-size: 25px;
+transition-duration: 0.4s;
+}
+
+#calcButton1
+{   margin-right: -6px; border-top-style: solid; border-top-right-radius: 0px;
+    height: 70px;
+width: 83.75px;
+border-radius: 5px;
+background-color: #217C7E;
+font-size: 25px;
+
+}
+
+#calcButton2
+{    margin-left: -6px;
+    height: 70px;
+width: 83.75px;
+border-radius: 5px;
+background-color: cyan;
+font-size: 25px;
+
+}
+
+#Out{
+    
+ background-color: rgb(54, 51, 51);}
+
+#ButtonUtil{
+background-color: brown;}
+
+#ButtonOp{
+background-color: rgb(133, 127, 77);
+transition-duration: 0.4s;}
+
+#ButtonNum{
+background-color: rgb(24, 13, 175);}
+
+#ButtonZero{
+background-color: rgb(207, 27, 126);}
+
+#calcButton:hover
+{cursor: pointer; 
+    background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+
+#ButtonNum:hover
+{cursor: pointer; 
+    background-color: rgb(184, 179, 139); /* Green */
+  color: white;
+}

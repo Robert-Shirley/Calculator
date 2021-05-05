@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    
+  
+   <div class="containerMain">
+       <div class= "calcu" id="calcu2">
+        <div id ="outputArea"><span id="calcScreen" style="width: fit-content;"></span>
+        <button onclick = "calculate('Del')" data-key="8" id="outputArea" style="width: 50px;float:right; border-style: none;height: 65px;"><img src="BK.png"style="float:right;  width: 50px; height: 65px; margin-bottom: 2px;"></button></div>
+       <button onclick = "reset()" class="ops" id="calcButton" style="background-color:dodgerblue;">AC</button>
+       <button onclick ="calculate('Neg')" class="ops" id="calcButton"style="background-color:dodgerblue;">+/-</button>
+       <button onclick ="calculate('%')" class="ops" id="calcButton"style="background-color:dodgerblue;">%</button>
+       <button onclick = "calculate('/')" data-key="111" class="ops" id="calcButton"style="background-color:#FF8F1F;">/</button>
+       <button onclick = "calculate(7)" data-key="103" class="num" id="calcButton">7</button>
+       <button onclick = "calculate(8)" data-key="104" class="num" id="calcButton">8</button>
+       <button onclick = "calculate(9)" data-key="105" class="num" id="calcButton">9</button>
+       <button onclick = "calculate('*')" data-key="106" class="ops" id="calcButton"style="background-color:#FF8F1F;">X</button>
+       <button onclick = "calculate(4)" data-key="100" class="num" id="calcButton">4</button>
+       <button onclick = "calculate(5)" data-key="101" class="num" id="calcButton">5</button>
+       <button onclick = "calculate(6)" data-key="102" class="num" id="calcButton">6</button>
+       <button onclick = "calculate('-')" data-key="109" class="ops" id="calcButton"style="background-color:#FF8F1F;">-</button>
+       <button onclick = "calculate(1)" data-key="97" class="num" id="calcButton">1</button>
+       <button onclick = "calculate(2)" data-key="98" class="num" id="calcButton">2</button>
+       <button onclick = "calculate(3)" data-key="99" class="num" id="calcButton">3</button>
+       <button onclick = "calculate('+')" data-key="107" class="ops" id="calcButton"style="background-color:#FF8F1F;">+</button>
+       <button onclick = "calculate(0)" data-key="96" class="num" id="calcButton" style="width: 193%;">0</button>
+       <button class="ops" id="calcButton" style="width: 0%; border-style: none; background-color: transparent;"></button>
+       <button onclick = "calculate('.')" data-key="110" class="ops" id="calcButton">.</button>
+       <button onclick = "calculate('Enter')" data-key="13" class="ops" id="calcButton"style="background-color:#FF8F1F;">=</button>
+     
+
+
+
+       </div>
+        <footer></footer>
+        </div>
+       
+
+
+
+
+  <script src="script.js">
+    
+    
+  </script>
+</body>
+</html>
